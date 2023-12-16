@@ -1,0 +1,9 @@
+authors = []
+description = ""
+language = "javascript"
+manifest_version = 3
+name = "hono-compute"
+service_id = "dkGKPbWpb7lUJNh5zgI6L2"
+
+[scripts]
+  build = "bun run build.ts && js-compute-runtime bin/index.js bin/main.wasm"

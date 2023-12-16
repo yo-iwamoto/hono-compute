@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "prebuild": "bun run build.ts",
+    "build": "js-compute-runtime bin/index.js bin/main.wasm",
+    "deploy": "fastly compute publish",
+    "dev": "fastly compute serve --watch"
+  },
+  "dependencies": {
+    "@fastly/js-compute": "^2.4.0",
+    "hono": "^3.11.7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.12"
+  }
+}
